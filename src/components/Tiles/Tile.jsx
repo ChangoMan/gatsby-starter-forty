@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { StyleSheet, css } from 'aphrodite'
 
+import * as layout from '../../helpers/layout'
+
 const styles = StyleSheet.create({
   article: {
     alignItems: 'center',
@@ -45,22 +47,22 @@ const styles = StyleSheet.create({
       width: '100%',
       zIndex: '1',
     },
-    '@media screen and (max-width: 1280px)': {
+    [layout.mediaQuery.maxWidth.large]: {
       padding: '4em 3em 2em 3em',
       height: '30vh',
       maxHeight: '30em',
       minHeight: '20em'
     },
-    '@media screen and (max-width: 980px)': {
+    [layout.mediaQuery.maxWidth.medium]: {
       width: '50%',
     },
-    '@media screen and (max-width: 736px)': {
+    [layout.mediaQuery.maxWidth.small]: {
       padding: '3em 1.5em 1em 1.5em',
       height: '16em',
       maxHeight: 'none',
       minHeight: 0,
     },
-    '@media screen and (max-width: 480px)': {
+    [layout.mediaQuery.maxWidth.xsmall]: {
       height: '20em',
       width: '100%',
     }
@@ -76,7 +78,7 @@ const styles = StyleSheet.create({
     fontSize: '1.75em',
     marginBottom: 0,
     width: 'calc(100% + 0.5em)',
-    '@media screen and (max-width: 736px)': {
+    [layout.mediaQuery.maxWidth.small]: {
       fontSize: '1.5em'
     },
     ':after': {
