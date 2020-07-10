@@ -1,4 +1,4 @@
-odule.exports = {
+Module.exports = {
   siteMetadata: {
     title: "Kanvas Hair Studio",
     author: "ujely",
@@ -20,10 +20,6 @@ odule.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-172015678-1',
       },
     },
   ],
