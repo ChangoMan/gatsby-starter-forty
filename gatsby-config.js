@@ -1,4 +1,4 @@
-Module.exports = {
+module.exports = {
   siteMetadata: {
     title: "Kanvas Hair Studio",
     author: "ujely",
